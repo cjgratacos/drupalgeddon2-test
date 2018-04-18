@@ -58,12 +58,12 @@ foreach ($sites as $site) {
     try {
         $response = $client->get($site . '/hello.txt');
     } catch (ClientException $exception) {
-        echo "--- ($site) it was able to execute code, but can't fetch the generated file." .PHP_EOL;
+        echo "--- It was able to execute code, but couldn't fetch the generated file." .PHP_EOL;
         continue;
     }
 
     if ($response->getStatusCode() == 200) {
-       echo "--- ($site) it was able to execute code and fetch it, example $site/hello.txt." . PHP_EOL;
+       echo "--- It was able to execute code and fetch it, example $site/hello.txt." . PHP_EOL;
        continue; 
     }
     
