@@ -1,0 +1,16 @@
+{
+    "name": "cjgratacos/drupalgeddon2_test",
+    "description": "Test sites for Drupalgeddon2",
+    "authors": [
+        {
+            "name": "Carlos Gratacos",
+            "email": "cg@largeinc.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "scripts": {
+        "drupalgeddon2": "php ./src/drupalgeddon2.php"
+    }
+}
