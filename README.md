@@ -1,6 +1,7 @@
 # Drupalgeddon 2 Test Scripts
+**Please note that this tool is for educational purpose only**
 
-This is a small package to test out if your Drupal 8 site is vulnerable to the latest attack trend reported as [CVE-2018-7600](https://www.drupal.org/sa-core-2018-002) also known as Drupalgeddon 2.
+This is a small tool to test out if your Drupal 8 site is vulnerable to the latest attack trend reported as [CVE-2018-7600](https://www.drupal.org/sa-core-2018-002) also known as Drupalgeddon 2.
 
 The most common entry point for the attack is the default user registration form provided by core, this is where we focus our test in this package.
 
@@ -14,8 +15,8 @@ Create a json file that is just an array of all sites which you wish to test out
 ```json
 // sites.json
 [
-    "https://www.drupal.org",
-    "https://www.atlarge.com",
+    "https://www.foo.org",
+    "https://www.abc_test.com",
     ...
 ]
 ```
